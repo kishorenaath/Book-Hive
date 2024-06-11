@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kisho\\source\\repos\\BookHive4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\controllers\\administratorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\controllers\\administratorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\controllers\\transcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\controllers\\transcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\migrations\\20240611141740_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\migrations\\20240611141740_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\models\\trans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\models\\trans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|c:\\users\\kisho\\source\\repos\\bookhive4\\bookhive4\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1AC2B6-C443-4995-A467-CCCAB5EF7A26}|BookHive4\\BookHive4.csproj|solutionrelative:bookhive4\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransController.cs",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Controllers\\TransController.cs",
+              "RelativeDocumentMoniker": "BookHive4\\Controllers\\TransController.cs",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Controllers\\TransController.cs",
+              "RelativeToolTip": "BookHive4\\Controllers\\TransController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:33:29.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookHive4\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookHive4\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:32:38.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "BookHive4\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "BookHive4\\Controllers\\CustomersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:31:52.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdministratorsController.cs",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Controllers\\AdministratorsController.cs",
+              "RelativeDocumentMoniker": "BookHive4\\Controllers\\AdministratorsController.cs",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Controllers\\AdministratorsController.cs",
+              "RelativeToolTip": "BookHive4\\Controllers\\AdministratorsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:30:13.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240611141740_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Migrations\\20240611141740_Initial.cs",
+              "RelativeDocumentMoniker": "BookHive4\\Migrations\\20240611141740_Initial.cs",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Migrations\\20240611141740_Initial.cs",
+              "RelativeToolTip": "BookHive4\\Migrations\\20240611141740_Initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:17:40.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Program.cs",
+              "RelativeDocumentMoniker": "BookHive4\\Program.cs",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Program.cs",
+              "RelativeToolTip": "BookHive4\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:14:43.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\appsettings.json",
+              "RelativeDocumentMoniker": "BookHive4\\appsettings.json",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\appsettings.json",
+              "RelativeToolTip": "BookHive4\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-11T14:14:14.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Trans.cs",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Models\\Trans.cs",
+              "RelativeDocumentMoniker": "BookHive4\\Models\\Trans.cs",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Models\\Trans.cs",
+              "RelativeToolTip": "BookHive4\\Models\\Trans.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:00:28.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "BookHive4\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\kisho\\source\\repos\\BookHive4\\BookHive4\\Models\\LoginModel.cs",
+              "RelativeToolTip": "BookHive4\\Models\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T13:59:19.356Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

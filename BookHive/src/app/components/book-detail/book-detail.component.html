@@ -1,0 +1,14 @@
+<div>
+  <app-cust-dashboard></app-cust-dashboard>
+</div>
+  <div class="card mb-3" *ngIf="book">
+    <div class="card-body">
+      <img  src="{{book.imgUrl}}" alt="Card image cap">
+      <h5 class="card-title text-bold">{{ book.title }}</h5>
+      <p class="card-text">{{ book.author }}</p>
+      <p class="card-text">{{ book.description }}</p>
+      <p class="card-text">{{ book.category }}</p>
+      <p class="text-danger fw-semibold me-2">{{ book.price | currency }}</p>
+    </div>
+  </div>
+

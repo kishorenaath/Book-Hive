@@ -1,0 +1,62 @@
+<div>
+    <app-admin-dashboard></app-admin-dashboard>
+  </div>
+<div class="container">
+    <form (ngSubmit)="save()">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h3>Edit Books</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="BookName" class="form-label">Book Name</label>
+                   <input type="text" class="form-control" name="BookName" [(ngModel)]="fetchedBook.title"
+                    >
+                                                                           
+                          
+                </div>
+
+                <div class="form-group">
+                    <label for="BookName" class="form-label" >Author Name</label>
+                   <input type="text" class="form-control" name="BookName" [(ngModel)]="fetchedBook.author"
+                   >
+                                                                           
+                          
+                </div>
+                <div class="form-group">
+                    <label for="BookName" class="form-label">Description Name</label>
+                   <input type="text" class="form-control" name="BookName" [(ngModel)]="fetchedBook.description"
+                   >
+                                                                           
+                          
+                </div>
+                <div class="form-group">
+                    <label for="BookName" class="form-label">ImageURL</label>
+                   <input type="text" class="form-control" name="BookName" [(ngModel)]="fetchedBook.imgUrl"
+                    >
+                                                                           
+                          
+                </div>
+                <div class="form-group">
+                    <label for="price" class="form-label">Book Price</label>
+                    <input type="text" 
+                           class="form-control" 
+                           name="price" 
+                            [(ngModel)]="fetchedBook.price"
+                          >
+                           
+                </div>
+                <div class="form-group">
+                    <label for="BookCat" class="form-label">Book category</label>
+                    <input type="text" class="form-control" name="BookCat" [(ngModel)]="fetchedBook.category"
+                    >
+                   
+                </div>
+               
+            </div>
+            <div class="card-footer bg-info text-white">
+                <button type="submit" class="btn btn-success" >Update Book</button>
+            </div>
+        </div>
+    </form>
+</div>
