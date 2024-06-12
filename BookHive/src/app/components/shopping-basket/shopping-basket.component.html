@@ -5,6 +5,9 @@
     <div class="container">
       <div class="col-12">
         <div class="row mt-3">
+            <!-- <div *ngIf="cartitems == undefined">
+                <h1>Basket is Empty!!</h1>
+            </div> -->
             <div class="col-lg-3 col-md-6 " *ngFor="let book of cartitems">
                 <div class="box-shadow">
                     <div class="card mt-2">
@@ -17,7 +20,10 @@
                                     class="text-danger fw-semibold me-2">{{book.price | currency}}</span> 
                             </p>
                             <div class="card-body">
-                                <a [routerLink]="['/placeorder', book.basketId]">Buy</a>&nbsp;
+                                <button type="button" class="btn btn-outline-success" [routerLink]="['/placeorder', book.basketId]">Buy</button>&nbsp;
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-danger" (click)="removeItem( book.basketId)">Remove</button>
                             </div>
                    </div>
                 </div>

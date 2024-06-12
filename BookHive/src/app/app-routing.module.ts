@@ -15,11 +15,12 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
 import { CustDashboardComponent } from './components/cust-dashboard/cust-dashboard.component';
 import { AdminBookAddComponent } from './components/admin-book-add/admin-book-add.component';
 import { PlaceorderComponent } from './components/placeorder/placeorder.component';
+import { AdminOrderEditComponent } from './components/admin-order-edit/admin-order-edit.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'login', component: LoginComponent },
-  { path: 'admindash', component: AdminDashboardComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'custdash', component: CustDashboardComponent },
   { path: 'Adminlogin', component: AdminLoginComponent },
   { path: 'register', component: RegistrationComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'admin/books', component: AdminBookListComponent },
   { path: 'admin/books/edit/:id', component: AdminBookEditComponent },
   { path: 'admin/orders', component: AdminOrderListComponent },
+  { path: 'admin/order/edit/:id', component: AdminOrderEditComponent },
   { path: 'admin/add', component: AdminBookAddComponent },
 ];
 

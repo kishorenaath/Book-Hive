@@ -13,6 +13,7 @@ import { BookService } from 'src/app/services/book.service';
 })
 export class BookListComponent implements OnInit {
   books: Book[] = [];
+  cats:any[]=[]
   book:Book = new Book;
   bookcat:Book[]=this.books;
   selectedCategory:string ="";
@@ -32,10 +33,22 @@ export class BookListComponent implements OnInit {
 
   constructor(private bookService: BookService,private router:Router,private httpbasket:BasketService) { }
 
+  distinctcat(){
+    for(var i in this.books){
+      if(this.cats.includes(this.books[i].category)){
+        console.log("ulla illa")
+      }else(
+        this.cats.push(this.books[i].category)
+      )
+    }
+  }
  
   getAllProductsByCateogry(cat:string){
+    this.selectedCategory = cat;
     this.bookcat = this.books.filter(x=>x.category == cat)
   }
+
+
   ngOnInit(): void {
     this.bookService.getBooks().subscribe((books) => {
       this.books = books;
@@ -46,10 +59,14 @@ export class BookListComponent implements OnInit {
      this.loggeduser=JSON.parse(localcust);
      }
   }
+
+
   addtocart(id:number){
+    console.log(this.cats)
     this.bookService.getBook(id).subscribe((book) => {
      this.book = book;
      });
+
      this.BasketItem.customerId = this.loggeduser.customerId;
      this.BasketItem.bookId=this.book.bookId;
      this.BasketItem.title = this.book.title;
@@ -59,6 +76,7 @@ export class BookListComponent implements OnInit {
      this.BasketItem.price = this.book.price;
      this.BasketItem.imgUrl = this.book.imgUrl;
      console.log(this.BasketItem.customerId)
+
      this.httpbasket.addBasketItem(this.BasketItem).subscribe({
       next:(response)=>{
         console.log("Added to Cart")

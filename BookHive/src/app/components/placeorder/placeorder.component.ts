@@ -22,8 +22,8 @@ export class PlaceorderComponent implements OnInit {
   }
 
   orderdet: any={
-    customerId: this.Currentuser.customerId,
-    bookId: this.cartItem.bookId,
+    customerId: 0,
+    bookId: 0,
     orderDate: Date,
     deliveryAddress: "",
     status: "Not Delivered",
@@ -37,7 +37,7 @@ export class PlaceorderComponent implements OnInit {
       this.orderdet.customerId= this.Currentuser.customerId;
       this.orderdet.bookId= this.cartItem.bookId;
       this.orderdet.orderDate= Date;
-      this.orderdet.deliveryAddress = this.checkoutObj.DeliveryPinCode;
+      this.orderdet.deliveryAddress = this.checkoutObj.DeliveryCity;
       this.orderdet.status= "Not Delivered";
       console.log(this.orderdet)
     });
@@ -48,10 +48,16 @@ export class PlaceorderComponent implements OnInit {
   }
 
   placeOrder(){
+    if(this.checkoutObj.DeliveryCity == "Chennai"){
+    console.log(this.checkoutObj.DeliveryPinCode)
+    console.log(this.orderdet)
     this.httporder.placeOrder(this.orderdet).subscribe((res)=>{
       console.log(res)
-      console.log("Order placed")
-      this.router.navigate(["order"])
+     alert("Order Placed")
+      this.router.navigate(["home"])
     })
+    }else{
+      alert("Sorry this book not available in your city")
+    }
   }
 }

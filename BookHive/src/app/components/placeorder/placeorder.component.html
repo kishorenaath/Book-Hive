@@ -14,7 +14,7 @@
                                 <input type="text" placeholder="City " [(ngModel)]="checkoutObj.DeliveryCity" class="form-control m-2">
                             </div>
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" placeholder="Pincode " [(ngModel)]="checkoutObj.DeliveryPinCode" class="form-control m-2">
+                                <input type="text" placeholder="Pincode " [(ngModel)]="orderdet.deliveryAddress" class="form-control m-2">
                             </div> 
                             <div class="col-lg-6 col-md-6">
                                 <textarea placeholder="Address Line 1 " [(ngModel)]="checkoutObj.DeliveryAddress1" class="form-control m-2" rows="3"></textarea> 
@@ -44,7 +44,7 @@
                             <div class="ps-3">
                                 <p class="p-0 m-0 fw-semibold">{{cartItem.title }}</p>
                                 <p class="p-0 m-0">{{cartItem.price | currency}}</p>
-                                <p class="text-start mt-4"><button class="btn">QTY : <b>{{cartItem.quantity}}</b> </button></p>
+                                <p class="text-start mt-4"><button class="btn">QTY : 1 </button></p>
                             </div>
                         </div>
                         

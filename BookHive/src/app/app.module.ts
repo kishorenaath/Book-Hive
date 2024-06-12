@@ -20,6 +20,7 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
 import { CustDashboardComponent } from './components/cust-dashboard/cust-dashboard.component';
 import { AdminBookAddComponent } from './components/admin-book-add/admin-book-add.component';
 import { PlaceorderComponent } from './components/placeorder/placeorder.component';
+import { AdminOrderEditComponent } from './components/admin-order-edit/admin-order-edit.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { PlaceorderComponent } from './components/placeorder/placeorder.componen
     AdminDashboardComponent,
     CustDashboardComponent,
     AdminBookAddComponent,
-    PlaceorderComponent
+    PlaceorderComponent,
+    AdminOrderEditComponent
   ],
   imports: [
     BrowserModule,

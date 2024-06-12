@@ -17,6 +17,10 @@ getOrders(): Observable<Order[]> {
   return this.http.get<Order[]>(this.apiUrl);
 }
 
+getOrderById(id:number): Observable<Order[]> {
+  return this.http.get<Order[]>(`${this.apiUrl}/${id}`);
+}
+
 placeOrder(order: Order): Observable<Order> {
   return this.http.post<Order>(this.apiUrl, order);
 }

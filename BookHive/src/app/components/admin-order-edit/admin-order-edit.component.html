@@ -1,0 +1,22 @@
+<div>
+    <app-admin-dashboard></app-admin-dashboard>
+  </div>
+<div class="container">
+    <form (ngSubmit)="save()">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h3>Edit Books</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="status" class="form-label">Delivery status</label>
+                   <input type="text" class="form-control" name="status" [(ngModel)]="orderdet.status"
+                    >
+                </div>
+            </div>
+            <div class="card-footer bg-info text-white">
+                <button type="submit" class="btn btn-success" >Update status</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -19,9 +19,9 @@
                                     class="text-danger fw-semibold me-2">{{book.price | currency}}</span> 
                             </p>
                             <div class="card-body">
-                              <a [routerLink]="['/book', book.bookId]">View Details</a>&nbsp;
-                              <a [routerLink]="['/admin/books/edit', book.bookId]">Edit book</a>
-                              <a (click)="deleteBook(book.bookId)">Delete Book</a>
+                              <button type="button" class="btn btn-outline-dark" [routerLink]="['/book', book.bookId]">View Details</button>
+                              <button type="button" class="btn btn-outline-dark" [routerLink]="['/admin/books/edit', book.bookId]">Edit</button>
+                              <button type="button" class="btn btn-outline-danger" (click)="deleteBook(book.bookId)">Delete</button>
                             </div>
                    </div>
                 </div>

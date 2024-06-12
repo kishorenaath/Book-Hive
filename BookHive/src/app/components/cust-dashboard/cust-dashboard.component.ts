@@ -16,6 +16,10 @@ export class CustDashboardComponent implements OnInit {
   gotoHome(){
     this.router.navigate(['books']);
   }
+  logout(){
+    localStorage.removeItem("currentuser");
+    this.router.navigate(['login'])
+  }
   ngOnInit(): void {
   }
 

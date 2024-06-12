@@ -19,15 +19,18 @@ export class ShoppingBasketComponent implements OnInit {
 
   constructor(private bookService: BookService,private route:ActivatedRoute,private httpbasket:BasketService) { }
 
+  loaddata(){
+    this.httpbasket.getBasketItems().subscribe({
+      next:(res)=>{this.cartitems = res.filter(x=>x.customerId==this.Currentuser.customerId)}
+    })
+  }
   ngOnInit(): void {
+    this.loaddata();
     const localcust = localStorage.getItem("currentuser");
     if(localcust !=null){
       this.Currentuser=JSON.parse(localcust);
     }
 
-  this.httpbasket.getBasketItems().subscribe({
-    next:(res)=>{this.cartitems = res.filter(x=>x.customerId==this.Currentuser.customerId)}
-  })
 
    //localstorage approach
     // const local = localStorage.getItem("token")
@@ -36,6 +39,16 @@ export class ShoppingBasketComponent implements OnInit {
     // }
     // }
   
+  }
+  removeItem(id:number){
+    this.httpbasket.deletebasketItem(id).subscribe({
+      next:(response)=>{
+        this.loaddata();
+   },
+   error:(err)=>{
+     console.log(err);
+   }
+    })
   }
   
     increment(){

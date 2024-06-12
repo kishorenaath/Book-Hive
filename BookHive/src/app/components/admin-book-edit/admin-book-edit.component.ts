@@ -31,11 +31,10 @@ export class AdminBookEditComponent implements OnInit {
       this.fetchedBook = book;
     });
       
-      }
+    }
       
       
-      save(){
-    console.log(this.fetchedBook.title)
+    save(){
     console.log(this.fetchedBook.title)
     this.httpbook.updateBook(this.fetchedBook.bookId,this.fetchedBook).subscribe({
       next:(response)=>{this.router.navigate(['admin/add'])},
@@ -44,41 +43,6 @@ export class AdminBookEditComponent implements OnInit {
   }
 }
 
-
-    
-    //     this.myReactiveForm.setValue({
-    //       rsId:this.fetchedBook.bookId,
-    //       rsName:this.fetchedBook.title,
-    //       rsauthor:this.fetchedBook.author ,
-    //       rsdescription:this.fetchedBook.description,
-    //       rscategory:this.fetchedBook.category,
-    //       rsprice:this.fetchedBook.price,
-    //       rsimgurl: this.fetchedBook.imgUrl
-    //     })
-    //   },
-    //   error:(err: any)=>console.log(err)
-    // })
-    // }
-
-    
-    
-  //   let newBook:Book={
-  //     bookId: 0,
-  //     title: myReactiveForm.value.rsName,
-  //     author: myReactiveForm.value.rsauthor ,
-  //     description: myReactiveForm.value.rsdescription,
-  //     category: myReactiveForm.value.rsdescription,
-  //     price: this.myReactiveForm.value.rsprice,
-  //     imgUrl: this.myReactiveForm.value.rsimgurl
-  //   }
-  //   this.httpbook.updateBook(this.fetchedBook.bookId,newBook).subscribe({
-  //    next:(response)=>{this.router.navigate(['books'])},
-  //    error:(err)=>{console.log(err)
-  //    // console.log(myForm.value.BookName,myForm.value.Author,myForm.value.Description,myForm.value.BookCat,myForm.value.price,myForm.value.ImgUrl )
-  //    }
-  //  })
-  //  }
-//}
 
 
 

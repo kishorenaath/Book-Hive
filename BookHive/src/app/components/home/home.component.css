@@ -1,0 +1,9 @@
+
+div{
+    border: solid;
+    border-color: rgb(123, 189, 131);
+    margin:10% 10%;
+}
+h1,p{
+    text-align: center;
+}
