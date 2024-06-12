@@ -17,10 +17,7 @@
                                     class="text-danger fw-semibold me-2">{{book.price | currency}}</span> 
                             </p>
                             <div class="card-body">
-                                <button type="button" class="btn btn-primary" (click)="increment()">++</button>
-                                <input type="text" [(ngModel)] ="quantity" />
-                                <button type="button" class="btn btn-warning " (click)="decrement()">--</button>
-                                <a [routerLink]="['/placeorder', book.bookId]">Buy</a>&nbsp;
+                                <a [routerLink]="['/placeorder', book.basketId]">Buy</a>&nbsp;
                             </div>
                    </div>
                 </div>

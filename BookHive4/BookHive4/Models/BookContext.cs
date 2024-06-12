@@ -1,4 +1,5 @@
 ﻿using BookHive2.Models;
+using BookHive3.Models;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
 using System.Transactions;
@@ -16,5 +17,6 @@ namespace BookHive1.Models
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Trans> Transactions { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
     }
 }

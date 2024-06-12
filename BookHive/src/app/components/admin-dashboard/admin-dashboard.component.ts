@@ -19,6 +19,9 @@ export class AdminDashboardComponent implements OnInit {
   gotoHome(){
     this.router.navigate(['admin/add']);
   }
+  gotoOrders(){
+    this.router.navigate(['order']);
+  }
   ngOnInit(): void {
     
     }

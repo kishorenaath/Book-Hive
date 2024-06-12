@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class OrderService { 
   
-// private apiUrl = 'https://localhost:7201/api/Trans'; 
+ // private apiUrl = 'https://localhost:7201/api/Trans'; 
 private apiUrl = 'https://localhost:7020/api/Trans'; 
 
 constructor(private http: HttpClient) { }

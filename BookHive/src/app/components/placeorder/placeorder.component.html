@@ -14,7 +14,7 @@
                                 <input type="text" placeholder="City " [(ngModel)]="checkoutObj.DeliveryCity" class="form-control m-2">
                             </div>
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" placeholder="Pincode " [(ngModel)]="checkoutObj.delivaryAddress" class="form-control m-2">
+                                <input type="text" placeholder="Pincode " [(ngModel)]="checkoutObj.DeliveryPinCode" class="form-control m-2">
                             </div> 
                             <div class="col-lg-6 col-md-6">
                                 <textarea placeholder="Address Line 1 " [(ngModel)]="checkoutObj.DeliveryAddress1" class="form-control m-2" rows="3"></textarea> 
@@ -38,13 +38,13 @@
                         <h4>Your Order</h4>
                     </div>
                     <div class="card-body">
-                        <div class="border-top d-flex mt-2" *ngFor="let item of cartItems">
-                            <img class="img-fluid h-25 w-25 p-2 " [src]="item.imgUrl"
+                        <div class="border-top d-flex mt-2" >
+                            <img class="img-fluid h-25 w-25 p-2 " [src]="cartItem.imgUrl"
                                 alt="">
                             <div class="ps-3">
-                                <p class="p-0 m-0 fw-semibold">{{item.title }}</p>
-                                <p class="p-0 m-0">${{item.price}}</p>
-                                <p class="text-start mt-4"><button class="btn">QTY : <b>{{item.quantity}}</b> </button></p>
+                                <p class="p-0 m-0 fw-semibold">{{cartItem.title }}</p>
+                                <p class="p-0 m-0">{{cartItem.price | currency}}</p>
+                                <p class="text-start mt-4"><button class="btn">QTY : <b>{{cartItem.quantity}}</b> </button></p>
                             </div>
                         </div>
                         
@@ -54,7 +54,7 @@
                             <div class=" border-top ">
                                 <div class="d-flex justify-content-between mt-2">
                                     <p class="fw-semibold">Total :</p>
-                                    <p class="fw-semibold">$169.00</p>
+                                    <p class="fw-semibold">{{cartItem.price | currency}}</p>
                                 </div>
                             </div>
                             <div class="row border-top ">

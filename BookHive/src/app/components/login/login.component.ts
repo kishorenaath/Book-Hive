@@ -22,6 +22,11 @@ export class LoginComponent implements OnInit {
   
   constructor(private httpadmin:AdminService,private httpcust:CustomerService,private router:Router) { }
   
+  LoginObj:any={
+    customerId:0,
+    username:"",
+    password:""
+  }
    backregis(){
      this.router.navigate(['register']); 
     }
@@ -33,11 +38,12 @@ export class LoginComponent implements OnInit {
     }
   ngOnInit(): void {
     this.httpadmin.getAdmins().subscribe((res)=>{this.alladmins=res})
-   this,this.getCustomers();
+   this.getCustomers();
   }
 
   addvalidation(myform:any){
     let newlogin:any={
+
       email:myform.value.Email1,
       password:myform.value.Password1,
     }
@@ -59,8 +65,12 @@ export class LoginComponent implements OnInit {
     for(var i in this.allcusts){
       console.log(newlogin.email==this.allcusts[i].username)
       console.log(newlogin.email)
-      console.log(this.allcusts[i].username)
+      console.log(this.allcusts)
       if(newlogin.email==this.allcusts[i].username && newlogin.password==this.allcusts[i].password){
+        this.LoginObj.customerId = this.allcusts[i].customerId;
+        this.LoginObj.username = this.allcusts[i].username;
+        this.LoginObj.password = this.allcusts[i].password;
+        localStorage.setItem("currentuser",JSON.stringify(this.LoginObj));
         this.router.navigate(['books']);
       }
     }
