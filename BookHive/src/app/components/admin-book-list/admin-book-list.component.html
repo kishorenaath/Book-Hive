@@ -5,8 +5,8 @@
 <div class="container">
     <form #myForm="ngForm" (ngSubmit)="addBook(myForm)">
         <div class="card">
-            <div class="card-header bg-primary text-white">
-                <h3>Add Books</h3>
+            <div class="card-header bg-dark text-white">
+                <h3>Add Book</h3>
             </div>
             <div class="card-body">
                 <div class="form-group">
@@ -73,8 +73,8 @@
                 </div>
                
             </div>
-            <div class="card-footer bg-warning text-white">
-                <button type="submit" class="btn btn-success" [disabled]="myForm.invalid" >Add Book</button>
+            <div class="card-footer bg-dark text-white">
+                <button type="submit" class="btn btn-light" [disabled]="myForm.invalid" >Add Book</button>
             </div>
         </div>
 

@@ -27,7 +27,7 @@ export class AdminBookListComponent implements OnInit {
       imgUrl: myForm.value.imgurl
     }
     this.httpbook.addBook(newBook).subscribe({
-     next:(response)=>{this.router.navigate(['books'])},
+     next:(response)=>{this.router.navigate(['admin/add'])},
      error:(err)=>{console.log(err)
       console.log(myForm.value.BookName,myForm.value.Author,myForm.value.Description,myForm.value.BookCat,myForm.value.price,myForm.value.ImgUrl )
      }

@@ -24,16 +24,20 @@ export class RegistrationComponent implements OnInit {
       role: "Customer"
     }
    this.httpcust.addCustomer(newlogin).subscribe({
-    next:(response)=>{this.router.navigate(['books'])},
+    next:(response)=>{
+      alert("registered successfully!!")
+      this.router.navigate(['login'])},
         error:(err)=>{console.log(err)}
    })
   console.log(this.allcusts)
   }
-  ngOnInit(): void {
+
+
+   ngOnInit(): void {
      this.httpcust.getCustomers().subscribe({
       next:(res: Customer[])=>{this.allcusts=res},
       error:(err: any)=>console.log(err)
-    })
-  }
-
+      })
+      }
+      
 }

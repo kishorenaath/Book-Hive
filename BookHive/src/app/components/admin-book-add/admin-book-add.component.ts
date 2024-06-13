@@ -9,6 +9,7 @@ import { BookService } from 'src/app/services/book.service';
 })
 export class AdminBookAddComponent implements OnInit {
 
+  loggeduser:any={}
   books: Book[] = [];
 
   constructor(private bookService: BookService) { }
@@ -21,6 +22,10 @@ export class AdminBookAddComponent implements OnInit {
   }
   ngOnInit(): void {
     this.loaddata();
+    const localcust = localStorage.getItem("currentuser");
+    if(localcust !=null){
+    this.loggeduser=JSON.parse(localcust);
+    }
     }
 
   

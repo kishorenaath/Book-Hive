@@ -1,5 +1,5 @@
 export interface Admin {
-    administratorid: number;
+    administratorId: number;
     username: string;
     password: string;
     role: string;

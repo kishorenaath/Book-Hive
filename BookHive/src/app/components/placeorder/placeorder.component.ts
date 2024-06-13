@@ -11,6 +11,7 @@ import { OrderService } from 'src/app/services/order.service';
 })
 export class PlaceorderComponent implements OnInit {
 
+  availability:any[]=["Chennai","Coimbatore","Tiruchy"]
   cartItem: any= {}
   Currentuser:any={}
   checkoutObj: any = {
@@ -48,7 +49,7 @@ export class PlaceorderComponent implements OnInit {
   }
 
   placeOrder(){
-    if(this.checkoutObj.DeliveryCity == "Chennai"){
+    if(this.availability.includes( this.checkoutObj.DeliveryCity) ){
     console.log(this.checkoutObj.DeliveryPinCode)
     console.log(this.orderdet)
     this.httporder.placeOrder(this.orderdet).subscribe((res)=>{

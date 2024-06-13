@@ -11,7 +11,10 @@
       <div class="row">
               <div class="col-12">
                 <div class="productHeading text-center">
+                    <h2 class="mb-3">Welcome {{loggeduser.username}}</h2>
+                    <br>
                     <h2 class="mb-3">The best books… are those that tell you what you know already</h2>
+                    <a  class=" m-4  text-decoration-none  fw-semibold" (click)="getall()" [ngClass]="selectedCategory == book.category?'text-danger':'text-black'" >All</a><br><br>
                     <ul class="list-unstyled d-flex flex-md-row  justify-content-center ">
                         <li *ngFor="let book of books" (click)="getAllProductsByCateogry(book.category)" >
                             <a  class=" m-4  text-decoration-none  fw-semibold" [ngClass]="selectedCategory == book.category?'text-danger':'text-black'" >{{book.category}}</a>

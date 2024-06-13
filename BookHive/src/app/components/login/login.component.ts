@@ -23,9 +23,6 @@ export class LoginComponent implements OnInit {
   constructor(private httpadmin:AdminService,private httpcust:CustomerService,private router:Router) { }
   
   LoginObj:any={
-    customerId:0,
-    username:"",
-    password:""
   }
    backregis(){
      this.router.navigate(['register']); 
@@ -47,18 +44,14 @@ export class LoginComponent implements OnInit {
       email:myform.value.Email1,
       password:myform.value.Password1,
     }
-  //   const loggedadmin = this.alladmins.find(x=>x.username == this.cred.uname && x.password == this.cred.pword)
-  //   const loggedcust = this.allcusts.find(x=>x.username == this.cred.uname && x.password == this.cred.pword)
-  // if(loggedadmin != undefined){
-  //   console.log("login success");
-  //   this.router.navigate(['admin/books']);
-  // }else  if(loggedcust != undefined){
-  //   console.log("login success");
-  //   this.router.navigate(['admin/books']);
-  // }else{console.log("false")}
     for(var i in this.alladmins){
       console.log(newlogin.email==this.alladmins[i].username)
       if(newlogin.email==this.alladmins[i].username && newlogin.password==this.alladmins[i].password){
+        this.LoginObj.adminId = this.alladmins[i].administratorId;
+        this.LoginObj.username = this.alladmins[i].username;
+        this.LoginObj.password = this.alladmins[i].password;
+        localStorage.setItem("currentuser",JSON.stringify(this.LoginObj));
+        alert("Login successfull..!!")
         this.router.navigate(['admin/add']);
       }
     }

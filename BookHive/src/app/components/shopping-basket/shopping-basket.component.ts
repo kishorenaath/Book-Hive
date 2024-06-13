@@ -12,18 +12,34 @@ import { BookService } from 'src/app/services/book.service';
   styleUrls: ['./shopping-basket.component.css']
 })
 export class ShoppingBasketComponent implements OnInit {
-  book: Book = new Book;
+
+  books: Book[] = [];
+  cats:any[]=[]
+  book:Book = new Book;
+  cartitems:Basket[]=[]
+  bookcat:any[]=this.cartitems;
+  selectedCategory:string ="";
   Currentuser:any={}
   quantity:number=1;
-  cartitems:Basket[]=[]
 
   constructor(private bookService: BookService,private route:ActivatedRoute,private httpbasket:BasketService) { }
 
+  getAllProductsByCateogry(cat:string){
+    this.selectedCategory = cat;
+    this.bookcat = this.cartitems.filter(x=>x.category == cat)
+  }
+  getall(){
+    this.bookcat = this.cartitems;
+  }
+
   loaddata(){
     this.httpbasket.getBasketItems().subscribe({
-      next:(res)=>{this.cartitems = res.filter(x=>x.customerId==this.Currentuser.customerId)}
+      next:(res)=>{this.cartitems = res.filter(x=>x.customerId==this.Currentuser.customerId)
+      this.bookcat = this.cartitems;
+      }
     })
   }
+
   ngOnInit(): void {
     this.loaddata();
     const localcust = localStorage.getItem("currentuser");

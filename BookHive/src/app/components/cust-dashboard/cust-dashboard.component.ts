@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class CustDashboardComponent implements OnInit {
 
+  loggeduser:any={}
   constructor(private router:Router) { }
   
   gotobasket(){
@@ -21,6 +22,10 @@ export class CustDashboardComponent implements OnInit {
     this.router.navigate(['login'])
   }
   ngOnInit(): void {
+    const localcust = localStorage.getItem("currentuser");
+    if(localcust !=null){
+    this.loggeduser=JSON.parse(localcust);
+    }
   }
 
 }

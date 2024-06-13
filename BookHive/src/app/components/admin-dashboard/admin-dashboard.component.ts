@@ -20,9 +20,10 @@ export class AdminDashboardComponent implements OnInit {
     this.router.navigate(['admin/add']);
   }
   gotoOrders(){
-    this.router.navigate(['order']);
+    this.router.navigate(['admin/orders']);
   }
   logout(){
+    localStorage.removeItem("currentuser");
     this.router.navigate(['login'])
   }
   ngOnInit(): void {

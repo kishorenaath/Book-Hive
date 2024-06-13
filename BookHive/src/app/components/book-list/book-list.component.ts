@@ -16,7 +16,7 @@ export class BookListComponent implements OnInit {
   cats:any[]=[]
   book:Book = new Book;
   bookcat:Book[]=this.books;
-  selectedCategory:string ="";
+  selectedCategory:string ="All";
   cartitems:any[]=[];
   loggeduser:any={}
   BasketItem:Basket={
@@ -46,6 +46,11 @@ export class BookListComponent implements OnInit {
   getAllProductsByCateogry(cat:string){
     this.selectedCategory = cat;
     this.bookcat = this.books.filter(x=>x.category == cat)
+  }
+
+  getall(){
+    this.bookcat = this.books;
+
   }
 
 
