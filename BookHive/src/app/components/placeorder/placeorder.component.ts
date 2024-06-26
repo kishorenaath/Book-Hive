@@ -55,7 +55,8 @@ export class PlaceorderComponent implements OnInit {
     this.httporder.placeOrder(this.orderdet).subscribe((res)=>{
       console.log(res)
      alert("Order Placed")
-      this.router.navigate(["home"])
+     
+      this.router.navigate(['/home',this.orderdet.bookId]);
     })
     }else{
       alert("Sorry this book not available in your city")

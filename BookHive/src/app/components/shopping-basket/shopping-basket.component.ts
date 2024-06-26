@@ -57,6 +57,8 @@ export class ShoppingBasketComponent implements OnInit {
   
   }
   removeItem(id:number){
+
+    if(confirm("Do you want to remove book from basket?")){
     this.httpbasket.deletebasketItem(id).subscribe({
       next:(response)=>{
         this.loaddata();
@@ -65,6 +67,7 @@ export class ShoppingBasketComponent implements OnInit {
      console.log(err);
    }
     })
+}
   }
   
     increment(){

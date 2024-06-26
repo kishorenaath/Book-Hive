@@ -16,14 +16,14 @@
               <span *ngIf="myEmail.invalid && myEmail.touched" class="text-danger">Username should be more than 3 characters</span>    
               <input type="email" class="form-control form-control-lg" name="Email1" id="Email" minlength="3" ngModel required #myEmail="ngModel">
               <br>
-              <!-- <input type="email" class="form-control form-control-lg" name="Email1" id="Email" ngModel required #myEmail="ngModel"> -->
+             
                    
               <label class="form-label" for="form3Example4cg">Password</label> 
               <br>
               <span *ngIf="myPassword.invalid && myPassword.touched" class="text-danger">Password should be more than 2 characters</span>
               <input type="password" class="form-control form-control-lg" name="Password1" id="Password" minlength="3" ngModel required #myPassword="ngModel" >
                  <br>
-              <!-- <input type="password" class="form-control form-control-lg" name="Password1" id="Password" ngModel required #myPassword="ngModel" > -->
+            
                  
                 <button type="submit" class="btn btn-success" [disabled]="myform1.invalid" style="margin-left: 44%;"  class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Submit</button>
               <br>

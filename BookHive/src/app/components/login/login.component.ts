@@ -53,7 +53,9 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("currentuser",JSON.stringify(this.LoginObj));
         alert("Login successfull..!!")
         this.router.navigate(['admin/add']);
+        
       }
+    
     }
     for(var i in this.allcusts){
       console.log(newlogin.email==this.allcusts[i].username)
@@ -64,8 +66,10 @@ export class LoginComponent implements OnInit {
         this.LoginObj.username = this.allcusts[i].username;
         this.LoginObj.password = this.allcusts[i].password;
         localStorage.setItem("currentuser",JSON.stringify(this.LoginObj));
+        alert("Login successfull..!!")
         this.router.navigate(['books']);
       }
+      
     }
   }
   }

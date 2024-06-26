@@ -1,10 +1,12 @@
 
-div{
-    border: solid;
-    border-color: rgb(123, 189, 131);
-    margin:10% 10%;
-    background-color: rgb(108, 189, 128);
-}
-h1,p{
+.cont{
+    background-image: url("https://th.bing.com/th?id=OIP.-qSUaWNGjqZw7hsHV-XqEwHaEl&w=317&h=196&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2");
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
+    background-color: rgb(101, 180, 154);
+}
+
+.order{
+    margin-left: 32%;
 }

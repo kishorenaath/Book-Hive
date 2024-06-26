@@ -84,7 +84,7 @@ export class BookListComponent implements OnInit {
 
      this.httpbasket.addBasketItem(this.BasketItem).subscribe({
       next:(response)=>{
-        console.log("Added to Cart")
+        alert("Added to Cart")
         this.router.navigate(['basket'])
       }, 
      })

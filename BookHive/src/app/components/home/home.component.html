@@ -1,12 +1,50 @@
-
-  <div class="jumbotron">
+<div class="cont"> 
+  <div class="jumbotron text-center text-white">
     <h1 class="display-4">Order Placed!</h1>
+    <br>
+    <div class="col-lg-4 col-md-12 order">
+      <div class="card shadow  text-center">
+          <div class="card-header  bg-dark bg-opacity-25">
+              <h4>Your Order</h4>
+          </div>
+          <div class="card-body">
+              <div class="border-top d-flex mt-2" >
+                  <img class="img-fluid h-200 w-200 p-2 " [src]="fetchedBook.imgUrl"
+                      alt="">
+                  <div class="ps-3">
+                      <p class="p-0 m-0 fw-semibold">{{fetchedBook.title }}</p>
+                      <p class="p-0 m-0">{{fetchedBook.price | currency}}</p>
+                      <p class="text-start mt-4"><button class="btn">QTY : 1 </button></p>
+                  </div>
+              </div>
+              
+              <div class="border-top ">
+                  
+                 
+                  <div class=" border-top ">
+                      <div class="d-flex justify-content-between mt-2">
+                          <p class="fw-semibold">Price :</p>
+                          <p class="fw-semibold">{{fetchedBook.price | currency}}</p>
+                      </div>
+                  </div>
+                  <div class="row border-top ">
+                      <div class="col-12 text-center mt-2">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
     <p class="lead">Thank you for being a part of us</p>
     <hr class="my-4">
     <p class="lead but">
-      <a class="btn btn-primary btn-lg" (click)="gotoHome()" role="button">Browse more books</a>
+      <a class="btn btn-outline-light btn-lg" (click)="gotoHome()" role="button">Browse more books</a>
     </p>
   </div>
-
+  <br>
+  <br>
+  <br>
+</div>
   
 

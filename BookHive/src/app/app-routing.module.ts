@@ -20,7 +20,7 @@ import { AdminOrderEditComponent } from './components/admin-order-edit/admin-ord
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'home/:id', component: HomeComponent },
   { path: 'custdash', component: CustDashboardComponent },
   { path: 'Adminlogin', component: AdminLoginComponent },
   { path: 'register', component: RegistrationComponent },

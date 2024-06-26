@@ -31,6 +31,7 @@ export class AdminBookAddComponent implements OnInit {
   
 
   deleteBook(bookid:number){
+    if(confirm("Do you want to delete book from inventory?")){
     this.bookService.deleteBook(bookid).subscribe({
       next:(response)=>{
            this.loaddata();
@@ -39,6 +40,6 @@ export class AdminBookAddComponent implements OnInit {
         console.log(err);
       }
     })
-
+}
  }
 }
